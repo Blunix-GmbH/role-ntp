@@ -1,4 +1,0 @@
-- name: installing ntp
-  apt:
-    name: "{{ ntp_package_name }}"
-    state: present

@@ -1,8 +1,7 @@
----
 - name: Converge
   hosts: all
-  become: yes
-  vars:
-    ntp_timezone: Europe/Berlin
+  become: True
   roles:
     - role: role-ntp
+  vars:
+    ntp_timezone: Europe/Berlin

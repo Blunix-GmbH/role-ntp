@@ -1,5 +1,5 @@
 - name: restart ntp
-  service: name={{ ntp_service_name }} state=restarted
-
-- name: reload ntp
-  service: name={{ ntp_service_name }} state=reloaded
+  systemd:
+    name: ntp
+    state: restarted
+    enabled: True

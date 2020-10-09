@@ -14,7 +14,7 @@ def test_binary(host):
 
 def test_timezone(host):
     f = host.file('/etc/timezone')
-    assert f.content_string == 'Europe/Berlin'
+    assert f.content_string == 'Europe/Berlin\n'
 
 
 @pytest.mark.parametrize('upstream', [
